@@ -1,0 +1,14 @@
+#Entrada de dados
+while True:
+    sexo = input("Entre com seu gênero (M para masculino, F para feminino):\n").upper()
+
+    if sexo == "M":
+        input("Você é um Homem")
+        break
+
+    elif sexo == "F":
+        input("Você é uma Mulher")
+        break
+
+    else:
+        print("Entrada inválida! Favor entre com M ou F")
