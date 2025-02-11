@@ -1,0 +1,23 @@
+# Entrada de dados
+nome = input("Digite seu nome:\n").strip()
+
+# Processamento e saída de dados
+# Retornando maiúsculo
+print("Nome em maiúsculo: ", nome.upper())
+
+# Retornando em minúsculo
+print("Nome minúsculo", nome.lower())
+
+# Quantidade de letras no nome
+qtdL = len(nome.replace(" ",""))
+print("Quantidade de letras no nome:", qtdL)
+
+# Alterando o nome
+nomeNew = nome.split()
+if len(nomeNew) > 1: # Separa o nome e verifica se o nome é composto tipo Julio Cesar
+    nomeNew[-1] = "do Inatel" # Acessa o ultimo elemento da lista e troca por "do Inatel"
+    nomeFinal = " ".join(nomeNew)
+else: # Aqui não há sobrenome, entao apenas add "do inatel" no final
+    nomeFinal = nome + " do Inatel"
+
+print("Nome novo:", nomeFinal)
