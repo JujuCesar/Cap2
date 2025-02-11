@@ -1,0 +1,16 @@
+import math
+
+# Entrada de dados
+numero = float(input("Digite um número decimal:\n"))
+
+# Processamento de dados
+raiz_quadrada = math.sqrt(numero)
+teto = math.ceil(numero)
+chao = math.floor(numero)
+inteiro = int(numero)
+
+# Saida de dados
+print((f"Raiz quadrada: {raiz_quadrada}"))
+print(f"Teto: {teto}")
+print(f"Chão: {chao}")
+print(f"Parte inteira: {inteiro}")
